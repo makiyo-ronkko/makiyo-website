@@ -1,0 +1,35 @@
+/* Hero-banner */
+
+/* Background pattern from Toptal Subtle Patterns */
+.hero-banner {
+    background: gray url(https://subtlepatterns.com/patterns/photography.png) repeat 0 0;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    height: 300px;
+    padding-top: 120px;
+    box-sizing: border-box;
+    -webkit-animation: slide 20s linear infinite;
+    }
+  
+  /* @-webkit-keyframes slide {
+      from { background-position: 0 0; }
+      to { background-position: -400px 0; }
+  } */
+  
+  .about-text{
+    flex: 1;
+    padding: 5px;
+    margin: 10px;
+  }
+  
+  .about-image{
+    flex: 1;
+    padding: 5px;
+    margin: 10px;
+  }
+  
+  .about-image img{
+    width: 20%;
+    height: auto;
+  }
