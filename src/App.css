@@ -205,7 +205,7 @@ header {
 
 .contact {
   background-color: #ffffff;
-  height: 200px;
+  height: 800px;
   order: 1;
   margin-bottom: 10px;
   margin-left: 20px;
@@ -502,7 +502,7 @@ header {
     width: 25%;
   }
   .hero-banner {
-    height: 500px;
+    height: 600px;
   }
   .slider {
     margin: auto;
