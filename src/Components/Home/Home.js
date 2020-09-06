@@ -3,6 +3,7 @@ import './Home.css';
 
 class Home extends Component {
   static defaultProps = {
+    selfie: 'selfie',
     title: 'Hello, my name is Makiyo.',
     subtitle: "I'm a junior web developer.",
     text:
@@ -21,7 +22,7 @@ class Home extends Component {
             <p>{this.props.text2}</p>
           </div>
           <div className='about-image'>
-            <img src='/makiyo.png' />
+            <img src='/makiyo.png' alt={this.props.selfie} />
           </div>
         </div>
       </div>

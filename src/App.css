@@ -106,6 +106,210 @@ html {
   height: auto;
 }
 
+/* Skills Education Work containers */
+
+.feature-1 {
+  background-color: #ffffff;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.feature-2 {
+  background-color: #ffffff;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.feature-3 {
+  background-color: #ffffff;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.feature-4 {
+  background-color: #ffffff;
+  height: 400px;
+  margin-bottom: 10px;
+}
+
+.box {
+  margin: 2em;
+  border: solid 3px #000000;
+  font-weight: bold;
+  background-color: #b2d6ff;
+}
+
+.feature-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Modal containers */
+
+.modal {
+  position: fixed;
+  z-index: 9999;
+  padding: 0.5em;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #fffafa;
+  background-color: #b2d6ff;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 50px auto auto auto;
+  padding: 20px;
+  border: solid 3px #000000;
+  width: 90%;
+  height: auto;
+  word-break: break-word;
+}
+
+.featureBtn {
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  text-decoration: none;
+  color: #000000;
+  border: solid 3px #000000;
+  border-radius: 5px;
+  transition: 0.4s;
+  cursor: pointer;
+  background-color: #fffafa;
+  font-size: 1em;
+}
+
+.featureBtn:hover {
+  background: #67c5ff;
+  color: #000000;
+  cursor: pointer;
+}
+
+.close {
+  color: #aaaaaa;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Skills - pop-up window */
+
+#skills {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+#skills::before {
+  content: '';
+  background: url('https://source.unsplash.com/1600x900/?color') no-repeat fixed
+    center center/ cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+}
+
+#skill-modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#skill-modal a {
+  text-decoration: underline;
+  color: #000000;
+  font-weight: bold;
+  padding: 20px 0 20px 0;
+}
+
+#skill-modal ul li {
+  list-style-type: none;
+}
+
+#skill-modal ul li:before {
+  content: '✓';
+}
+
+/* Education - pop-up window */
+
+#workexperience {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+#workexperience::before {
+  content: '';
+  background: url('https://source.unsplash.com/1600x900/?color') no-repeat fixed
+    center center/ cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+}
+
+/* Education - pop-up window */
+#education {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+#education::before {
+  content: '';
+  background: url('https://source.unsplash.com/1600x900/?color') no-repeat fixed
+    center center/ cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+}
+
+/* Project - pop-up window */
+#project {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+#project::before {
+  content: '';
+  background: url('https://source.unsplash.com/1600x900/?color') no-repeat fixed
+    center center/ cover;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+}
+
+#project-pop-up a {
+  text-decoration: underline;
+  color: #000000;
+  font-weight: bold;
+}
+
 /* Contact Form*/
 
 .contact {
@@ -153,20 +357,6 @@ html {
   padding-top: 10px;
 }
 
-/* Footer */
-.footer {
-  background-color: #b2d6ff;
-  order: 3;
-  height: 100px;
-  display: flex;
-  justify-content: space-around;
-}
-
-.socialicons a {
-  color: #000000;
-  padding: 10px;
-}
-
 /* Mobile version */
 @media only screen and (max-width: 400px) {
   body {
@@ -179,6 +369,11 @@ html {
   .hero-banner {
     height: 400px;
   }
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 33.333%;
+  }
 }
 
 /* Desktop version */
@@ -187,51 +382,14 @@ html {
     min-width: 960px;
     margin: 0 auto;
   }
-}
-
-/* Desktop navigation */
-@media only screen and (min-width: 401px) {
-  header {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background: #b2d6ff;
-    color: #000000;
+  .feature-1,
+  .feature-2,
+  .feature-3 {
+    width: 33.33%;
   }
 
-  .nav {
+  .modal-content {
     width: 70%;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-direction: row;
-    position: static;
-    margin: 0;
-    background-color: transparent;
-    visibility: visible;
-  }
-  .navlink {
-    list-style: none;
-    margin: 0;
-  }
-
-  .navlink a {
-    color: #000000;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    cursor: pointer;
-  }
-
-  .navlink a:hover {
-    border-bottom: 4px dotted#000000;
-  }
-
-  .burger {
-    font-size: 1.2em;
-    display: none;
+    height: auto;
   }
 }

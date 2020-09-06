@@ -8,8 +8,7 @@ import Project from './Components/Project/Project';
 import Modal from './Components/Modal/Modal';
 import Modal2 from './Components/Modal/Modal2';
 import Modal3 from './Components/Modal/Modal3';
-import Modal4 from './Components/Modal/Modal4';
-//import Footer from './Components/Footer/Footer';
+import Footer from './Components/Footer/Footer';
 
 class App extends Component {
   static defaultProps = {};
@@ -21,18 +20,16 @@ class App extends Component {
       show1: false,
       show2: false,
       show3: false,
-      show4: false,
     };
 
     //this.toggleNav = this.toggleNav.bind(this);
     this.showModal1 = this.showModal1.bind(this);
     this.showModal2 = this.showModal2.bind(this);
     this.showModal3 = this.showModal3.bind(this);
-    this.showModal4 = this.showModal4.bind(this);
+
     this.hideModal1 = this.hideModal1.bind(this);
     this.hideModal2 = this.hideModal2.bind(this);
     this.hideModal3 = this.hideModal3.bind(this);
-    this.hideModal4 = this.hideModal4.bind(this);
   }
 
   showModal1 = () => {
@@ -50,11 +47,6 @@ class App extends Component {
       show3: true,
     });
   };
-  showModal4 = () => {
-    this.setState({
-      show4: true,
-    });
-  };
 
   hideModal1 = () => {
     this.setState({
@@ -69,11 +61,6 @@ class App extends Component {
   hideModal3 = () => {
     this.setState({
       show3: false,
-    });
-  };
-  hideModal4 = () => {
-    this.setState({
-      show4: false,
     });
   };
 
@@ -109,33 +96,6 @@ class App extends Component {
 
         {/* <!-- Hero banner --> */}
         <Home />
-
-        {/* <!-- Contact form --> */}
-        <div className='section contact' id='contact'>
-          <div id='mycv-container'>
-            <div id='mycv'>
-              <h2>My CV here!</h2>
-              <div id='pdf-btn'>
-                <button onClick={() => this.openCV()}>
-                  {' '}
-                  <i className='fas fa-download fa-2x'></i>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div id='mycontact-container'>
-            <div id='mycontact'>
-              <h2>Feel free to contact me :)</h2>
-              <div className='email-btn'>
-                <div className='icon'>
-                  <a href='mailto:makiyo.ronkko@bc.edu.fi'>
-                    <i className='far fa-envelope fa-2x'></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
         {/* <!-- Feature cards --> */}
         <div className='section feature-1'>
@@ -183,31 +143,40 @@ class App extends Component {
           <Modal3 show3={this.state.show3} handleClose3={this.hideModal3} />
         </div>
 
-        <div className='section feature-4'>
-          <div className='box' id='project'>
-            <div className='feature-container'>
-              <button
-                id='projectBtn'
-                className='featureBtn'
-                onClick={this.showModal4}
-              >
-                Project
-              </button>
+        {/* <!-- Contact form --> */}
+        <div className='section contact' id='contact'>
+          <h1>Project</h1>
+        </div>
+
+        <div className='section contact' id='contact'>
+          <div id='mycv-container'>
+            <div id='mycv'>
+              <h2>My CV here!</h2>
+              <div id='pdf-btn'>
+                <button onClick={() => this.openCV()}>
+                  {' '}
+                  <i className='fas fa-download fa-2x'></i>
+                </button>
+              </div>
             </div>
           </div>
-          <Modal4 show4={this.state.show4} handleClose4={this.hideModal4} />
-        </div>
-        {/* <!-- Footer --> */}
-        <div className='section footer'>
-          <div className='socialicons'>
-            <a href='//linkedin.com/in/makiyoronkko ' target='_blank'>
-              <i className=' fab fa-linkedin fa-2x'></i>
-            </a>
-            <a href='//github.com/makiyo-ronkko' target='_blank'>
-              <i className='fab fa-github fa-2x'></i>
-            </a>
+          <div id='mycontact-container'>
+            <div id='mycontact'>
+              <h2>Feel free to contact me :)</h2>
+              <div className='email-btn'>
+                <div className='icon'>
+                  <a href='mailto:makiyo.ronkko@bc.edu.fi'>
+                    <i className='far fa-envelope fa-2x'></i>
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
+
+        {/* <!-- Footer --> */}
+        <Footer />
+
         {/* <BrowserRouter>
           <header>
             <Nav />
