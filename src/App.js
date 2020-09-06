@@ -6,6 +6,9 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Project from './Components/Project/Project';
 import Modal from './Components/Modal/Modal';
+import Modal2 from './Components/Modal/Modal2';
+import Modal3 from './Components/Modal/Modal3';
+import Modal4 from './Components/Modal/Modal4';
 //import Footer from './Components/Footer/Footer';
 
 class App extends Component {
@@ -17,21 +20,63 @@ class App extends Component {
     super(props);
 
     this.state = {
-      toggle: false,
-      show: false,
+      show1: false,
+      show2: false,
+      show3: false,
+      show4: false,
     };
 
     //this.toggleNav = this.toggleNav.bind(this);
-    this.showModal = this.showModal.bind(this);
-    this.hideModal = this.hideModal.bind(this);
+    this.showModal1 = this.showModal1.bind(this);
+    this.showModal2 = this.showModal2.bind(this);
+    this.showModal3 = this.showModal3.bind(this);
+    this.showModal4 = this.showModal4.bind(this);
+    this.hideModal1 = this.hideModal1.bind(this);
+    this.hideModal2 = this.hideModal2.bind(this);
+    this.hideModal3 = this.hideModal3.bind(this);
+    this.hideModal4 = this.hideModal4.bind(this);
   }
 
-  showModal = () => {
-    this.setState({ show: true });
+  showModal1 = () => {
+    this.setState({
+      show1: true,
+    });
+  };
+  showModal2 = () => {
+    this.setState({
+      show2: true,
+    });
+  };
+  showModal3 = () => {
+    this.setState({
+      show3: true,
+    });
+  };
+  showModal4 = () => {
+    this.setState({
+      show4: true,
+    });
   };
 
-  hideModal = () => {
-    this.setState({ show: false });
+  hideModal1 = () => {
+    this.setState({
+      show1: false,
+    });
+  };
+  hideModal2 = () => {
+    this.setState({
+      show2: false,
+    });
+  };
+  hideModal3 = () => {
+    this.setState({
+      show3: false,
+    });
+  };
+  hideModal4 = () => {
+    this.setState({
+      show4: false,
+    });
   };
 
   /* Scroll top button */
@@ -49,17 +94,6 @@ class App extends Component {
   //   });
   // };
 
-  /* Nav bar */
-  // toggleNav() {
-  //   const burger = this.refs.burgeri;
-  //   const nav = document.querySelector('.nav');
-
-  //   // Defining a function
-  //   burger.classList.toggle('fa-bars');
-  //   burger.classList.toggle('fa-times');
-  //   nav.classList.toggle('nav-active');
-  // }
-
   /* CV to download */
 
   openCV() {
@@ -72,30 +106,8 @@ class App extends Component {
         <div id='page_top'>
           <a href='#'></a>
         </div>
-        <header>
-          {/* <!-- Menu & navigation bar --> */}
-          <ul className='nav'>
-            <li className='navlink'>
-              <a href='#page_top'>Home</a>
-            </li>
-            <li className='navlink'>
-              <a href='#about'>About</a>
-            </li>
-            <li className='navlink'>
-              <a href='#skills'>Skills</a>
-            </li>
-            <li className='navlink'>
-              <a href='#project'>Projects</a>
-            </li>
-            <li className='navlink'>
-              <a href='#contact'>Contact</a>
-            </li>
-          </ul>
-          <div className='burger'>
-            <i className='fas fa-bars'></i>
-            {/* <i onClick={this.toggleNav()} className='fas fa-bars'></i> */}
-          </div>
-        </header>
+        {/* <!-- Menu & navigation bar --> */}
+        <Nav />
 
         {/* <!-- Hero banner --> */}
         <div className='section hero-banner background-animated'>
@@ -144,13 +156,13 @@ class App extends Component {
               <button
                 id='skillsBtn'
                 className='featureBtn'
-                onClick={this.showModal}
+                onClick={this.showModal1}
               >
                 Skills
               </button>
             </div>
           </div>
-          <Modal show={this.state.show} handleClose={this.hideModal} />
+          <Modal show1={this.state.show1} handleClose1={this.hideModal1} />
         </div>
 
         <div className='section feature-2'>
@@ -159,13 +171,13 @@ class App extends Component {
               <button
                 id='workBtn'
                 className='featureBtn'
-                onClick={this.showModal}
+                onClick={this.showModal2}
               >
                 Work Experience
               </button>
             </div>
           </div>
-          <Modal show={this.state.show} handleClose={this.hideModal} />
+          <Modal2 show2={this.state.show2} handleClose2={this.hideModal2} />
         </div>
 
         <div className='section feature-3'>
@@ -174,13 +186,13 @@ class App extends Component {
               <button
                 id='educationBtn'
                 className='featureBtn'
-                onClick={this.showModal}
+                onClick={this.showModal3}
               >
                 Education
               </button>
             </div>
           </div>
-          <Modal show={this.state.show} handleClose={this.hideModal} />
+          <Modal3 show3={this.state.show3} handleClose3={this.hideModal3} />
         </div>
 
         <div className='section feature-4'>
@@ -189,13 +201,13 @@ class App extends Component {
               <button
                 id='projectBtn'
                 className='featureBtn'
-                onClick={this.showModal}
+                onClick={this.showModal4}
               >
                 Project
               </button>
             </div>
           </div>
-          <Modal show={this.state.show} handleClose={this.hideModal} />
+          <Modal4 show4={this.state.show4} handleClose4={this.hideModal4} />
         </div>
         {/* <!-- Footer --> */}
         <div className='section footer'>

@@ -1,23 +1,45 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Nav.css';
 
-const Nav = () => {
+class Nav extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      toggle: false,
+    };
+  }
 
+  /* Nav bar */
+  toggleNav() {
+    const burger = this.refs.burgeri;
+    const nav = document.querySelector('.nav');
+
+    // Defining a function
+    burger.classList.toggle('fa-bars');
+    burger.classList.toggle('fa-times');
+    nav.classList.toggle('nav-active');
+  }
+  render() {
     return (
-        <div>
-            <ul className="Nav-container">
-                <li className="Nav-link"><a href="/">
-                    <i className="fas fa-home"></i>HOME</a></li>
-                <li className="Nav-link"><a className="item" href="/about">
-                    <i className="fas fa-smile"></i>ABOUT</a></li>
-                <li className="Nav-link"> <a className="item" href="/project">
-                    <i className="fab fa-github"></i>PROJECT</a></li>
-                <li className="Nav-link"> <a className="item" href="#contact">
-                    <i className="far fa-envelope"></i>CONTACT</a></li>
-            </ul>
-        </div>
-
+      <header>
+        <ul className='nav'>
+          <li className='navlink'>
+            <a href='#page_top'>Home</a>
+          </li>
+          <li className='navlink'>
+            <a href='#project'>Projects</a>
+          </li>
+          <li className='navlink'>
+            <a href='#contact'>Contact</a>
+          </li>
+        </ul>
+        {/* <div className='burger'>
+          <i className='fas fa-bars'></i>
+          <i onClick={this.toggleNav()} className='fas fa-bars'></i> 
+        </div> */}
+      </header>
     );
-};
+  }
+}
 
 export default Nav;
