@@ -3,8 +3,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Nav from './Components/Nav/Nav';
 import Home from './Components/Home/Home';
-import About from './Components/About/About';
 import Project from './Components/Project/Project';
+//import Features from './Components/Features/Features';
 import Modal from './Components/Modal/Modal';
 import Modal2 from './Components/Modal/Modal2';
 import Modal3 from './Components/Modal/Modal3';
@@ -12,9 +12,7 @@ import Modal4 from './Components/Modal/Modal4';
 //import Footer from './Components/Footer/Footer';
 
 class App extends Component {
-  static defaultProps = {
-    intro: 'Hello, my name is Makiyo.',
-  };
+  static defaultProps = {};
 
   constructor(props) {
     super(props);
@@ -110,17 +108,7 @@ class App extends Component {
         <Nav />
 
         {/* <!-- Hero banner --> */}
-        <div className='section hero-banner background-animated'>
-          <div id='about'>
-            <div className='about-text'>
-              <h1>{this.props.intro}</h1>
-              <p>I'm a junior web developer.</p>
-            </div>
-            <div className='about-image'>
-              <img src='/makiyo.png' />
-            </div>
-          </div>
-        </div>
+        <Home />
 
         {/* <!-- Contact form --> */}
         <div className='section contact' id='contact'>
