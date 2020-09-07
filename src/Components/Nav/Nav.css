@@ -47,10 +47,11 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  transition: all ease 500ms;
 }
 
 .navlink a:hover {
-  border-bottom: 4px dotted#000000;
+  transform: scale(1.1);
 }
 
 .nav-active {
@@ -98,10 +99,11 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    transition: all ease 500ms;
   }
 
   .navlink a:hover {
-    border-bottom: 4px dotted#000000;
+    transform: scale(1.1);
   }
 
   .burger {
