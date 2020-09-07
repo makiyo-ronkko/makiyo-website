@@ -9,16 +9,6 @@ class Nav extends Component {
     };
   }
 
-  /* Nav bar */
-  toggleNav() {
-    const burger = this.refs.burgeri;
-    const nav = document.querySelector('.nav');
-
-    // Defining a function
-    burger.classList.toggle('fa-bars');
-    burger.classList.toggle('fa-times');
-    nav.classList.toggle('nav-active');
-  }
   render() {
     return (
       <header>

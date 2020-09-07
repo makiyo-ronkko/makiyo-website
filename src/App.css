@@ -78,6 +78,7 @@ html {
   border: solid 3px #000000;
   font-weight: bold;
   background-color: #b2d6ff;
+  border-radius: 10px;
 }
 
 .feature-container {
@@ -89,83 +90,6 @@ html {
   align-content: center;
   height: 100%;
   z-index: 0;
-}
-
-/* Skills - pop-up window */
-
-#skills {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
-
-#skills::before {
-  content: '';
-  background: url('https://source.unsplash.com/1600x900/?color') no-repeat fixed
-    center center/ cover;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0.3;
-}
-
-#skill-modal {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-
-#skill-modal a {
-  text-decoration: underline;
-  color: #000000;
-  font-weight: bold;
-  padding: 20px 0 20px 0;
-}
-
-#skill-modal ul li {
-  list-style-type: none;
-}
-
-#skill-modal ul li:before {
-  content: '✓';
-}
-
-/* Education - pop-up window */
-
-#workexperience {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
-
-#workexperience::before {
-  content: '';
-  background: url('https://source.unsplash.com/1600x900/?color') no-repeat fixed
-    center center/ cover;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0.3;
-}
-
-/* Education - pop-up window */
-#education {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-}
-
-#education::before {
-  content: '';
-  background: url('https://source.unsplash.com/1600x900/?color') no-repeat fixed
-    center center/ cover;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0.3;
 }
 
 /* Contact Form*/

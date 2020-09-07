@@ -47,22 +47,11 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
-  transition: all ease 500ms;
 }
 
 .navlink a:hover {
-  transform: scale(1.1);
+  color: #a9a9a9;
 }
-
-.nav-active {
-  right: 0;
-  visibility: visible;
-  transition: all 400ms;
-}
-
-/* .burger {
-  display: block;
-} */
 
 /* Desktop navigation */
 @media only screen and (min-width: 401px) {
@@ -99,11 +88,10 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
-    transition: all ease 500ms;
   }
 
   .navlink a:hover {
-    transform: scale(1.1);
+    color: #a9a9a9;
   }
 
   .burger {
