@@ -1,70 +1,13 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Nav from './Components/Nav/Nav';
 import Home from './Components/Home/Home';
 import Project from './Components/Project/Project';
-//import Features from './Components/Features/Features';
-import Modal from './Components/Modal/Modal';
-import Modal2 from './Components/Modal/Modal2';
-import Modal3 from './Components/Modal/Modal3';
+import Card from './Components/Card/Card';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 
 class App extends Component {
-  static defaultProps = {};
-
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      show1: false,
-      show2: false,
-      show3: false,
-    };
-
-    //this.toggleNav = this.toggleNav.bind(this);
-    this.showModal1 = this.showModal1.bind(this);
-    this.showModal2 = this.showModal2.bind(this);
-    this.showModal3 = this.showModal3.bind(this);
-
-    this.hideModal1 = this.hideModal1.bind(this);
-    this.hideModal2 = this.hideModal2.bind(this);
-    this.hideModal3 = this.hideModal3.bind(this);
-  }
-
-  showModal1 = () => {
-    this.setState({
-      show1: true,
-    });
-  };
-  showModal2 = () => {
-    this.setState({
-      show2: true,
-    });
-  };
-  showModal3 = () => {
-    this.setState({
-      show3: true,
-    });
-  };
-
-  hideModal1 = () => {
-    this.setState({
-      show1: false,
-    });
-  };
-  hideModal2 = () => {
-    this.setState({
-      show2: false,
-    });
-  };
-  hideModal3 = () => {
-    this.setState({
-      show3: false,
-    });
-  };
-
   /* Scroll top button */
 
   // scroll = () => {
@@ -99,53 +42,10 @@ class App extends Component {
         <Home />
 
         {/* <!-- Feature cards --> */}
-        <div className='section feature-1'>
-          <div className='box' id='skills'>
-            <div className='feature-container'>
-              <button
-                id='skillsBtn'
-                className='featureBtn'
-                onClick={this.showModal1}
-              >
-                Skills
-              </button>
-            </div>
-          </div>
-          <Modal show1={this.state.show1} handleClose1={this.hideModal1} />
-        </div>
-
-        <div className='section feature-2'>
-          <div className='box' id='workexperience'>
-            <div className='feature-container'>
-              <button
-                id='workBtn'
-                className='featureBtn'
-                onClick={this.showModal2}
-              >
-                Work Experience
-              </button>
-            </div>
-          </div>
-          <Modal2 show2={this.state.show2} handleClose2={this.hideModal2} />
-        </div>
-
-        <div className='section feature-3'>
-          <div className='box' id='education'>
-            <div className='feature-container'>
-              <button
-                id='educationBtn'
-                className='featureBtn'
-                onClick={this.showModal3}
-              >
-                Education
-              </button>
-            </div>
-          </div>
-          <Modal3 show3={this.state.show3} handleClose3={this.hideModal3} />
-        </div>
+        <Card />
 
         {/* <!-- Project --> */}
-        <Project />
+        <Project username='makiyo-ronkko' />
 
         {/* <!-- Contact form --> */}
 
@@ -153,21 +53,6 @@ class App extends Component {
 
         {/* <!-- Footer --> */}
         <Footer />
-
-        {/* <BrowserRouter>
-          <header>
-            <Nav />
-          </header>
-          <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/project" component={Project} />
-          </Switch>
-          <div>
-            {/* <Footer /> */}
-        {/* </div> */}
-
-        {/* </BrowserRouter> */}
       </div>
     );
   }
