@@ -26,7 +26,7 @@ const Modal = ({ handleClose1, show1 }) => {
           </ul>
         </div>
         <div>
-          <h2>Udemy Courses I am studying: </h2>
+          <h2>Udemy Courses I have studied: </h2>
           <ul>
             <li>The Modern Javascript Bootcamp Course(2020)</li>
             <li>Modern React with Redux [2020 update]</li>
