@@ -25,7 +25,7 @@ class Project extends Component {
 
   render() {
     return (
-      <div>
+      <div id='project'>
         {this.state.isLoaded ? (
           <div className='Project'>
             <h1>Project</h1>
