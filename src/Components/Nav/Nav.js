@@ -14,7 +14,7 @@ class Nav extends Component {
       <header>
         <ul className='nav'>
           <li className='navlink'>
-            <a href='#page_top'>Home</a>
+            <a href='#top'>Home</a>
           </li>
           <li className='navlink'>
             <a href='#project'>Projects</a>

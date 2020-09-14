@@ -47,10 +47,14 @@ header {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  padding: 6px;
+  border-radius: 5px;
+  border: 4px double black;
 }
 
 .navlink a:hover {
   color: #a9a9a9;
+  border: 5px solid #a9a9a9;
 }
 
 /* Desktop navigation */
@@ -88,10 +92,14 @@ header {
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    padding: 6px;
+    border-radius: 5px;
+    border: 5px double black;
   }
 
   .navlink a:hover {
     color: #a9a9a9;
+    border: 4px solid #a9a9a9;
   }
 
   .burger {
