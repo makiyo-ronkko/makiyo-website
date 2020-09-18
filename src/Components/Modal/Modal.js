@@ -5,12 +5,10 @@ const Modal = ({ handleClose1, show1 }) => {
   if (!show1) {
     return null;
   }
-  //   const showHideClassName = show ? 'modal display-block' : 'modal display-none';
-  const showHideClassName = show1 ? 'block' : 'none';
 
   return (
-    <div id='skills-pop-up' className='modal' style={{ display: 'block' }}>
-      <div className='modal-content' id='skill-modal'>
+    <div id='skills-pop-up' className='Modal' style={{ display: 'block' }}>
+      <div className='Modal-content' id='skill-modal'>
         <span className='close' onClick={handleClose1}>
           &times;
         </span>
@@ -36,7 +34,11 @@ const Modal = ({ handleClose1, show1 }) => {
             <li>The Complete Javascript Course 2020: Build Real Projects!</li>
           </ul>
         </div>
-        <a href='//github.com/makiyo-ronkko' target='_blank'>
+        <a
+          href='//github.com/makiyo-ronkko'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <i className='fab fa-github fa-2x'></i>Makiyo's Github Page
         </a>
       </div>

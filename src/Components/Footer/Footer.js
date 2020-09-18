@@ -5,10 +5,18 @@ const Footer = () => {
   return (
     <div className='section footer'>
       <div className='socialicons'>
-        <a href='//linkedin.com/in/makiyoronkko ' target='_blank'>
+        <a
+          href='//linkedin.com/in/makiyoronkko '
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <i className=' fab fa-linkedin fa-2x'></i>
         </a>
-        <a href='//github.com/makiyo-ronkko' target='_blank'>
+        <a
+          href='//github.com/makiyo-ronkko'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
           <i className='fab fa-github fa-2x'></i>
         </a>
       </div>
