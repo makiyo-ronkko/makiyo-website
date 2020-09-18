@@ -72,27 +72,10 @@ html {
   }
 }
 
-/* Tablet version */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  .hero-banner {
-    height: 400px;
-  }
-  .feature-1,
-  .feature-2,
-  .feature-3 {
-    width: 33.333%;
-  }
-}
-
 /* Desktop version */
 @media only screen and (min-width: 961px) {
   .wrapper {
     min-width: 960px;
     margin: 0 auto;
-  }
-  .feature-1,
-  .feature-2,
-  .feature-3 {
-    width: 33.33%;
   }
 }
