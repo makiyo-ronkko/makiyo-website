@@ -9,9 +9,8 @@
 /* Hero-banner */
 
 /* Background pattern credit to Toptal Subtle Patterns */
-.hero-banner {
-  background: gray url(https://subtlepatterns.com/patterns/photography.png)
-    repeat 0 0;
+.Hero-banner {
+  background: gray url(/photography_ToptalSubtlePatterns.png) repeat 0 0;
   width: 100%;
   margin: 0;
   text-align: center;
