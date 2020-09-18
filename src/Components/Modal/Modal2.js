@@ -5,12 +5,9 @@ const Modal2 = ({ handleClose2, show2 }) => {
   if (!show2) {
     return null;
   }
-  //   const showHideClassName = show ? 'modal display-block' : 'modal display-none';
-  const showHideClassName = show2 ? 'block' : 'none';
-
   return (
-    <div id='work-pop-up' className='modal' style={{ display: 'block' }}>
-      <div className='modal-content' id='work-modal'>
+    <div id='work-pop-up' className='Modal' style={{ display: 'block' }}>
+      <div className='Modal-content' id='work-modal'>
         <span className='close' onClick={handleClose2}>
           &times;
         </span>

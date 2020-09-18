@@ -6,11 +6,11 @@ const Modal3 = ({ handleClose3, show3 }) => {
     return null;
   }
   //   const showHideClassName = show ? 'modal display-block' : 'modal display-none';
-  const showHideClassName = show3 ? 'block' : 'none';
+  // const showHideClassName = show3 ? 'block' : 'none';
 
   return (
-    <div id='education-pop-up' className='modal' style={{ display: 'block' }}>
-      <div className='modal-content'>
+    <div id='education-pop-up' className='Modal' style={{ display: 'block' }}>
+      <div className='Modal-content'>
         <span className='close' onClick={handleClose3}>
           &times;
         </span>
