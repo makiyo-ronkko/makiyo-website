@@ -35,21 +35,3 @@ const Modal3 = ({ handleClose3, show3 }) => {
 };
 
 export default Modal3;
-
-{
-  /* <div
-id='project-pop-up'
-className='modal'
-className={this.showHideClassname}
->
-<div className='modal-content'>
-  <span className='close' onClick={this.handleClose}>
-    &times;
-  </span>
-  <h2>Please click below link to see my project!</h2>
-  <a href='//github.com/makiyo-ronkko' target='_blank'>
-    <i className='fab fa-github fa-2x'></i>Makiyo's Github
-  </a>
-</div>
-</div> */
-}
