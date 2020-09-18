@@ -12,7 +12,7 @@ class Nav extends Component {
   render() {
     return (
       <header>
-        <ul className='nav'>
+        <ul className='Nav'>
           <li className='navlink'>
             <a href='#top'>Home</a>
           </li>

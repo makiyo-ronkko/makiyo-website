@@ -8,25 +8,19 @@
 
 /* Skills Education Work containers */
 
-.feature-1 {
+.Card-1 {
   background-color: #ffffff;
   height: 400px;
   margin-bottom: 10px;
 }
 
-.feature-2 {
+.Card-2 {
   background-color: #ffffff;
   height: 400px;
   margin-bottom: 10px;
 }
 
-.feature-3 {
-  background-color: #ffffff;
-  height: 400px;
-  margin-bottom: 10px;
-}
-
-.feature-4 {
+.Card-3 {
   background-color: #ffffff;
   height: 400px;
   margin-bottom: 10px;
@@ -40,7 +34,7 @@
   box-shadow: 8px 5px 0 black;
 }
 
-.feature-container {
+.Card-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -53,7 +47,7 @@
 
 /* Modal containers */
 
-.modal {
+.Modal {
   position: fixed;
   z-index: 9999;
   padding: 0.5em;
@@ -66,17 +60,17 @@
   background-color: #b2d6ff;
 }
 
-.modal h2 {
+.Modal h2 {
   margin: 5px;
   padding: 5px 5px 5px 0;
 }
 
-.modal p {
+.Modal p {
   margin: 5px;
   padding: 0;
 }
 
-.modal-content {
+.Modal-content {
   background-color: #fefefe;
   margin: 50px auto auto auto;
   padding: 20px;
@@ -87,7 +81,7 @@
   border-radius: 5px;
 }
 
-.featureBtn {
+.cardBtn {
   width: 120px;
   display: flex;
   justify-content: center;
@@ -99,13 +93,14 @@
   transition: 0.4s;
   cursor: pointer;
   background-color: #fffafa;
-  font-size: 1em;
+  font-size: 1rem;
   border-radius: 10px;
   transition: all ease 500ms;
   box-shadow: 5px 5px 0 black;
+  text-transform: uppercase;
 }
 
-.featureBtn:hover {
+.cardBtn:hover {
   background: #f4d6db;
   color: #000000;
   cursor: pointer;
@@ -218,10 +213,9 @@
 
 /* Tablet version */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  .feature-1,
-  .feature-2,
-  .feature-3,
-  .feature-4 {
+  .Card-1,
+  .Card-2,
+  .Card-3 {
     width: 33.33%;
   }
 
@@ -232,10 +226,9 @@
 
 /* Desktop version */
 @media only screen and (min-width: 961px) {
-  .feature-1,
-  .feature-2,
-  .feature-3,
-  .feature-4 {
+  .Card-1,
+  .Card-2,
+  .Card-3 {
     width: 33.33%;
   }
 

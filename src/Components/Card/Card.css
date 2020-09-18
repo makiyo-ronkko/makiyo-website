@@ -8,7 +8,7 @@
 
 /* Skills Education Work containers */
 
-.feature-1 .feature-2 .feature-3 {
+.Card-1 .Card-2 .Card-3 {
   background-color: #ffffff;
   height: 400px;
   margin-bottom: 10px;
@@ -22,7 +22,7 @@
   border-radius: 10px;
 }
 
-.feature-container {
+.Card-container {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -92,9 +92,9 @@
   .hero-banner {
     height: 400px;
   }
-  .feature-1,
-  .feature-2,
-  .feature-3 {
+  .Card-1,
+  .Card-2,
+  .Card-3 {
     width: 33.333%;
   }
 }
@@ -105,9 +105,9 @@
     min-width: 960px;
     margin: 0 auto;
   }
-  .feature-1,
-  .feature-2,
-  .feature-3 {
+  .Card-1,
+  .Card-2,
+  .Card-3 {
     width: 33.33%;
   }
 }

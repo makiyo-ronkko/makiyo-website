@@ -33,7 +33,7 @@ class App extends Component {
     return (
       <div className='wrapper'>
         <div id='page_top'>
-          <a href='#'></a>
+          <a href='#top'></a>
         </div>
         {/* <!-- Menu & navigation bar --> */}
         <Nav />

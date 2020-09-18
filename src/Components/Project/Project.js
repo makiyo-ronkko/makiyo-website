@@ -25,9 +25,9 @@ class Project extends Component {
 
   render() {
     return (
-      <div id='project'>
+      <div className='Project section'>
         {this.state.isLoaded ? (
-          <div className='Project'>
+          <div>
             <h1>Project</h1>
             <h3>{this.state.login}</h3>
             <img

@@ -59,12 +59,12 @@ class Card extends Component {
   render() {
     return (
       <>
-        <div className='section feature-1'>
+        <div className='Card-1 section'>
           <div className='box' id='skills'>
-            <div className='feature-container'>
+            <div className='Card-container'>
               <button
                 id='skillsBtn'
-                className='featureBtn'
+                className='cardBtn'
                 onClick={this.showModal1}
               >
                 Skills
@@ -74,12 +74,12 @@ class Card extends Component {
           <Modal show1={this.state.show1} handleClose1={this.hideModal1} />
         </div>
 
-        <div className='section feature-2'>
+        <div className='Card-2 section'>
           <div className='box' id='workexperience'>
-            <div className='feature-container'>
+            <div className='Card-container'>
               <button
                 id='workBtn'
-                className='featureBtn'
+                className='cardBtn'
                 onClick={this.showModal2}
               >
                 Work Experience
@@ -89,12 +89,12 @@ class Card extends Component {
           <Modal2 show2={this.state.show2} handleClose2={this.hideModal2} />
         </div>
 
-        <div className='section feature-3'>
+        <div className='Card-3 section'>
           <div className='box' id='education'>
-            <div className='feature-container'>
+            <div className='Card-container'>
               <button
                 id='educationBtn'
-                className='featureBtn'
+                className='cardBtn'
                 onClick={this.showModal3}
               >
                 Education

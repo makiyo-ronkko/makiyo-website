@@ -13,7 +13,7 @@ class Home extends Component {
   };
   render() {
     return (
-      <div className='section hero-banner background-animated' id='top'>
+      <div className='Hero-banner section background-animated' id='top'>
         <div id='about'>
           <div className='about-text'>
             <h2>{this.props.title}</h2>
