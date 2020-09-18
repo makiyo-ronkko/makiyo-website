@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
   return (
-    <div className='section footer'>
+    <div className='Footer section'>
       <div className='socialicons'>
         <a
           href='//linkedin.com/in/makiyoronkko '
@@ -19,6 +19,9 @@ const Footer = () => {
         >
           <i className='fab fa-github fa-2x'></i>
         </a>
+      </div>
+      <div className='copyright'>
+        <p>Copyright &copy; 2020 www.makiyo-website.com</p>
       </div>
     </div>
   );
