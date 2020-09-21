@@ -23,12 +23,6 @@ class App extends Component {
   //   });
   // };
 
-  /* CV to download */
-
-  openCV() {
-    window.open('cv.html', '_blank');
-  }
-
   render() {
     return (
       <div className='wrapper'>
