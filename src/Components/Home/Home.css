@@ -10,7 +10,8 @@
 
 /* Background pattern credit to Toptal Subtle Patterns */
 .Hero-banner {
-  background: gray url(//subtlepatterns.com/patterns/photography.png) repeat 0 0;
+  background: white url(//subtlepatterns.com/patterns/photography.png) repeat 0
+    0;
   width: 100%;
   margin: 0;
   text-align: center;
