@@ -33,47 +33,6 @@
   z-index: 0;
 }
 
-/* Contact Form*/
-
-.contact {
-  background-color: #ffffff;
-  height: 800px;
-  order: 1;
-  margin-bottom: 10px;
-  margin-left: 20px;
-}
-
-.contact h2 {
-  font-size: 1em;
-  padding: 0 5px 5px 0;
-}
-
-#mycv-container {
-  height: 300px;
-  width: 50%;
-  background-color: transparent;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
-#pdf-btn button {
-  cursor: pointer;
-}
-
-#mycontact-container {
-  height: 300px;
-  width: 50%;
-  background-color: transparent;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-}
-
 #mycontact a {
   text-decoration: none;
   color: #000000;
