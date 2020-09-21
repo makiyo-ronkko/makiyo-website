@@ -22,7 +22,7 @@ class Home extends Component {
             <p>{this.props.text2}</p>
           </div>
           <div className='about-image'>
-            <img src='/makiyo.png' alt={this.props.selfie} />
+            <img src='./makiyo.png' alt={this.props.selfie} />
           </div>
         </div>
       </div>
