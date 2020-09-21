@@ -25,20 +25,32 @@ class Project extends Component {
 
   render() {
     return (
-      <div className='Project section'>
-        {this.state.isLoaded ? (
-          <div className='Project-container'>
-            <h1>Project</h1>
-            <h3>{this.state.login}</h3>
-            <img
+      <div className='Project section' id='project'>
+        <div className='Project-container'>
+          <div className='Proejct-title'>
+            <h1 style={{ margin: '20px', textTransform: 'uppercase' }}>
+              Project
+            </h1>
+            {/* <img
               src={this.state.imgUrl}
               alt='makiyo-ronkko'
               style={{ width: '10%' }}
-            />
+            /> */}
           </div>
-        ) : (
-          <div className='loader' />
-        )}
+          <h3 style={{ margin: '20px' }}>
+            My Github account: {this.state.login}
+          </h3>
+          <div style={{ textAlign: 'center' }}>
+            <p>♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢</p>
+            <p>♢♢♢♢♢ Under construction ♢♢♢♢♢</p>
+            <p>♢♢♢♢♢♢♢ Coming soon! ♢♢♢♢♢♢♢</p>
+            <p>♢♢♢♢ Thank you for your patience! ♢♢♢♢</p>
+            <p>♢♢ In the meantime, please visit my github ♢♢</p>
+            <p>♢♢♢♢♢♢♢♢ Kiitos paljon! ♢♢♢♢♢♢♢♢</p>
+            <p>♢♢♢♢♢♢♢ ありがとうございます! ♢♢♢♢♢♢♢</p>
+            <p>♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢♢</p>
+          </div>
+        </div>
       </div>
     );
   }
