@@ -27,7 +27,7 @@ class Project extends Component {
     return (
       <div className='Project section'>
         {this.state.isLoaded ? (
-          <div>
+          <div className='Project-container'>
             <h1>Project</h1>
             <h3>{this.state.login}</h3>
             <img
