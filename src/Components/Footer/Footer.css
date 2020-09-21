@@ -22,3 +22,9 @@
   display: flex;
   margin-bottom: 10px;
 }
+
+.copyright p {
+  display: flex;
+  margin: 0 10px;
+  text-align: center;
+}

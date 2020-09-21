@@ -21,7 +21,7 @@ const Footer = () => {
         </a>
       </div>
       <div className='copyright'>
-        <p>Copyright &copy; 2020 www.makiyo-website.com</p>
+        <p>Copyright &copy; 2020 makiyo-ronkko.github.io/makiyo-website</p>
       </div>
     </div>
   );
