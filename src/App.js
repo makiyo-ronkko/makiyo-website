@@ -29,23 +29,11 @@ class App extends Component {
         <div id='page_top'>
           <a href='#top'></a>
         </div>
-        {/* <!-- Menu & navigation bar --> */}
         <Nav />
-
-        {/* <!-- Hero banner --> */}
         <Home />
-
-        {/* <!-- Feature cards --> */}
         <Card />
-
-        {/* <!-- Project --> */}
         <Project username='makiyo-ronkko' />
-
-        {/* <!-- Contact form --> */}
-
         <Contact />
-
-        {/* <!-- Footer --> */}
         <Footer />
       </div>
     );
