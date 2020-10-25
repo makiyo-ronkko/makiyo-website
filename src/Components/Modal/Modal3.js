@@ -29,6 +29,7 @@ const Modal3 = ({ handleClose3, show3 }) => {
         </p>
         <h2>01/2003- 12/2005: Los Angeles City College, Los Angeles, U.S.A.</h2>
         <p>Associate of Art in Music (AA)</p>
+        <h2>For details, please visit my Linkedin page.</h2>
       </div>
     </div>
   );

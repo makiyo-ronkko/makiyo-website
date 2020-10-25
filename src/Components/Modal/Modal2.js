@@ -30,7 +30,7 @@ const Modal2 = ({ handleClose2, show2 }) => {
           Part-time Media Consultant, Media Department & Intern as Media
           Developer, Media Department
         </p>
-        <h2>For the rest of experiences, please see my CV.</h2>
+        <h2>For the rest of experiences, please visit my Linkedin page.</h2>
       </div>
     </div>
   );
