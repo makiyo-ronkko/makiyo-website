@@ -10,7 +10,7 @@ const Footer = () => {
 					target='_blank'
 					rel='noopener noreferrer'
 				>
-					<i className=' fab fa-linkedin fa-2x'></i>
+					<i className='fab fa-linkedin fa-2x'></i>
 				</a>
 				<a
 					href='//github.com/makiyo-ronkko'
