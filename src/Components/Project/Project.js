@@ -6,8 +6,9 @@ class Project extends Component {
 	static defaultProps = {
 		appName: 'https://dailyartsharing.herokuapp.com/ ',
 		githubLink: 'https://github.com/makiyo-ronkko/fullstack-app',
-		about:
-			'I have built various apps for my own projects and school. Here is the latest fullstack project I would like to present.',
+		about1: 'I have built various apps for my own projects and school.',
+		about2: 'Below is the latest fullstack project I would like to present.',
+		about3: 'Please also my github page for more information.',
 		title: '♢ Daily Art Sharing ♢',
 		appDesc:
 			"'Daily Art Sharing' is a social media app where people can share arts and pictures daily and get ideas and inspiration from peer artists.",
@@ -27,54 +28,59 @@ class Project extends Component {
 					className='Proejct-title'
 					style={{ textDecoration: 'uppercase', margin: '20px' }}
 				>
-					<h1 style={{ textTransform: 'uppercase' }}>Project</h1>
+					<h1 style={{ textTransform: 'uppercase' }}>Projects</h1>
 				</div>
-				<h4>{this.props.about}</h4>
-
-				<div className='section'>
-					<div className='Project-box'>
-						<h4>
-							<a
-								href='https://dailyartsharing.herokuapp.com'
-								target='_blank'
-								style={{
-									textDecoration: 'none',
-									backgroundColor: '#f4d6db',
-									color: 'black',
-								}}
-							>
-								{this.props.appName}
-							</a>
-						</h4>
-						<br />
-						<h4>
-							<a
-								href='https://github.com/makiyo-ronkko/fullstack-app'
-								target='_blank'
-								style={{
-									textDecoration: 'none',
-									backgroundColor: '#f4d6db',
-									color: 'black',
-								}}
-							>
-								{this.props.githubLink}
-							</a>
-						</h4>
-						<p style={{ margin: '0.2rem', padding: '0.2rem' }}>
-							{this.props.title}
-						</p>
+				<h4>{this.props.about1}</h4>
+				<h4>{this.props.about2}</h4>
+				<h4>{this.props.about3}</h4>
+				<br />
+				{/* <div className='section'> */}
+				<div className='Project-box'>
+					<h4>
+						<a
+							href='https://dailyartsharing.herokuapp.com'
+							target='_blank'
+							rel='noopener noreferrer'
+							style={{
+								textDecoration: 'none',
+								backgroundColor: '#f4d6db',
+								color: 'black',
+							}}
+						>
+							{this.props.appName}
+						</a>
+					</h4>
+					<br />
+					<h4>
 						<a
 							href='https://github.com/makiyo-ronkko/fullstack-app'
 							target='_blank'
+							rel='noopener noreferrer'
+							style={{
+								textDecoration: 'none',
+								backgroundColor: '#f4d6db',
+								color: 'black',
+							}}
 						>
-							<img
-								src={project}
-								alt='makiyo-ronkko'
-								className='Project-img'
-								style={{ width: '30%' }}
-							/>
+							{this.props.githubLink}
 						</a>
-					</div>
+					</h4>
+					<p style={{ margin: '0.2rem', padding: '0.2rem' }}>
+						{this.props.title}
+					</p>
+					<a
+						href='https://github.com/makiyo-ronkko/fullstack-app'
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<img
+							src={project}
+							alt='makiyo-ronkko'
+							className='Project-img'
+							style={{ width: '30%' }}
+						/>
+					</a>
+					{/* </div> */}
 				</div>
 
 				<div className='description-box'>
@@ -94,6 +100,7 @@ class Project extends Component {
 						}}
 						href='//github.com/makiyo-ronkko'
 						target='_blank'
+						rel='noopener noreferrer'
 					>
 						My Github Page
 					</a>
