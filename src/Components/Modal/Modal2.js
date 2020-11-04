@@ -5,6 +5,7 @@ const Modal2 = ({ handleClose2, show2 }) => {
 	if (!show2) {
 		return null;
 	}
+
 	return (
 		<div id='work-pop-up' className='Modal' style={{ display: 'block' }}>
 			<div className='Modal-content' id='work-modal'>

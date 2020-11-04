@@ -1,99 +1,99 @@
 .Project-section {
-  width: 100%;
-  height: 700px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
+	width: 100%;
+	height: 700px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
 }
 
 .Project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 32px 16px;
-  background: none;
-  text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 32px 16px;
+	background: none;
+	text-align: center;
 }
 
 .Project-title h1 {
-  margin: 20px;
-  text-transform: uppercase;
-  text-decoration: underline;
+	margin: 20px;
+	text-transform: uppercase;
+	text-decoration: underline;
 }
 
 .Project-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .Project-box a p {
-  padding: 0.2rem;
-  margin: 0.2rem;
+	padding: 0.2rem;
+	margin: 0.2rem;
 }
 
 .description-box {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-gap: 1rem;
-  height: auto;
-  width: 80%;
-  margin: 1rem 0;
-  border: solid 2px #000000;
-  padding: 1rem 0;
-  background: linear-gradient(90deg, #b2d6ff, #b3dbd3, #f4d6db);
-  border-radius: 0.2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-gap: 1rem;
+	height: auto;
+	width: 80%;
+	margin: 1rem 0;
+	border: solid 2px #000000;
+	padding: 1rem 0;
+	background: linear-gradient(90deg, #b2d6ff, #b3dbd3, #f4d6db);
+	border-radius: 0.2rem;
 }
 
 .Project-img {
-  border: solid 2px #000000;
+	border: solid 2px #000000;
 }
 
 .Project-img:hover {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .projectBtn {
-  width: 180px;
-  display: flex;
-  justify-content: center;
-  padding: 0.6rem;
-  text-decoration: none;
-  color: #000000;
-  border: solid 3px #000000;
-  border-radius: 5px;
-  transition: 0.4s;
-  cursor: pointer;
-  background-color: #fffafa;
-  font-size: 1rem;
-  border-radius: 10px;
-  transition: all ease 500ms;
-  box-shadow: 5px 5px 0 black;
-  text-transform: uppercase;
+	width: 180px;
+	display: flex;
+	justify-content: center;
+	padding: 0.6rem;
+	text-decoration: none;
+	color: #000000;
+	border: solid 3px #000000;
+	border-radius: 5px;
+	transition: 0.4s;
+	cursor: pointer;
+	background-color: #fffafa;
+	font-size: 1rem;
+	border-radius: 10px;
+	transition: all ease 500ms;
+	box-shadow: 5px 5px 0 black;
+	text-transform: uppercase;
 }
 
 .projectBtn:hover {
-  background: #f4d6db;
-  color: #000000;
-  cursor: pointer;
-  transform: scale(1.1);
-  opacity: 1.3;
+	background: #f4d6db;
+	color: #000000;
+	cursor: pointer;
+	transform: scale(1.1);
+	opacity: 1.3;
 }
 
 @media only screen and (max-width: 960px) {
-  .Project-section {
-    height: 800px;
-  }
-  .box {
-    margin: 0 auto;
-    height: 800px;
-  }
+	.Project-section {
+		height: 800px;
+	}
+	.box {
+		margin: 0 auto;
+		height: 800px;
+	}
 }
 
 @media only screen and (min-width: 1600px) {
-  .Project-section {
-    height: 800px;
-  }
+	.Project-section {
+		height: 800px;
+	}
 }

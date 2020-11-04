@@ -8,7 +8,6 @@ import Modal3 from '../Modal/Modal3';
 class Card extends Component {
 	constructor(props) {
 		super(props);
-
 		this.state = {
 			show1: false,
 			show2: false,

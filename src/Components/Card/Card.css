@@ -1,72 +1,74 @@
 .section {
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* Skills Education Work containers */
 
 .Card-1 .Card-2 .Card-3 {
-  background-color: #ffffff;
-  height: 400px;
-  margin-bottom: 10px;
+	background-color: #ffffff;
+	height: 400px;
+	margin-bottom: 10px;
 }
 
 .box {
-  margin: 2em;
-  border: solid 3px #000000;
-  font-weight: bold;
-  background-color: #b2d6ff;
-  border-radius: 10px;
+	margin: 2em;
+	border: solid 3px #000000;
+	font-weight: bold;
+	background-color: #b2d6ff;
+	border-radius: 10px;
 }
 
 .Card-container {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  height: 100%;
-  z-index: 0;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	height: 100%;
+	z-index: 0;
 }
 
 #mycontact a {
-  text-decoration: none;
-  color: #000000;
-  padding-top: 10px;
+	text-decoration: none;
+	color: #000000;
+	padding-top: 10px;
 }
 
 /* Mobile version */
 @media only screen and (max-width: 400px) {
-  body {
-    background-color: #ffffff;
-  }
+	body {
+		background-color: #ffffff;
+	}
 }
 
 /* Tablet version */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  .hero-banner {
-    height: 400px;
-  }
-  .Card-1,
-  .Card-2,
-  .Card-3 {
-    width: 33.333%;
-  }
+	.hero-banner {
+		height: 400px;
+	}
+
+	.Card-1,
+	.Card-2,
+	.Card-3 {
+		width: 33.333%;
+	}
 }
 
 /* Desktop version */
 @media only screen and (min-width: 961px) {
-  .wrapper {
-    min-width: 960px;
-    margin: 0 auto;
-  }
-  .Card-1,
-  .Card-2,
-  .Card-3 {
-    width: 33.33%;
-  }
+	.wrapper {
+		min-width: 960px;
+		margin: 0 auto;
+	}
+
+	.Card-1,
+	.Card-2,
+	.Card-3 {
+		width: 33.33%;
+	}
 }
