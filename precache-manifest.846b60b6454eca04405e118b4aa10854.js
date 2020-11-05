@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "746fdf24312f8f45a9cd1fe95a100930",
+    "revision": "c93a3e363442c86df5f0fa44017b70f0",
     "url": "/makiyo-website/index.html"
   },
   {
-    "revision": "f057a428d9344f9ce137",
+    "revision": "8464a751395b3570b17e",
     "url": "/makiyo-website/static/css/main.e9f1d2ad.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/makiyo-website/static/js/2.78851b33.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f057a428d9344f9ce137",
-    "url": "/makiyo-website/static/js/main.9a68b056.chunk.js"
+    "revision": "8464a751395b3570b17e",
+    "url": "/makiyo-website/static/js/main.c191947c.chunk.js"
   },
   {
     "revision": "5dba69579feb0c101b32",
