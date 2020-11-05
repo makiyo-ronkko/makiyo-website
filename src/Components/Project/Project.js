@@ -37,6 +37,7 @@ class Project extends Component {
 				{/* <div className='section'> */}
 				<div className='Project-box'>
 					<h4>
+						Demo:{' '}
 						<a
 							href='https://dailyartsharing.herokuapp.com'
 							target='_blank'
@@ -52,6 +53,7 @@ class Project extends Component {
 					</h4>
 					<br />
 					<h4>
+						Code:{' '}
 						<a
 							href='https://github.com/makiyo-ronkko/fullstack-app'
 							target='_blank'
