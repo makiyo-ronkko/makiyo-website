@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/makiyo-website/static/css/main.e9f1d2ad.chunk.css",
-    "main.js": "/makiyo-website/static/js/main.c191947c.chunk.js",
-    "main.js.map": "/makiyo-website/static/js/main.c191947c.chunk.js.map",
+    "main.css": "/makiyo-website/static/css/main.ffbcfcb8.chunk.css",
+    "main.js": "/makiyo-website/static/js/main.50e22eb0.chunk.js",
+    "main.js.map": "/makiyo-website/static/js/main.50e22eb0.chunk.js.map",
     "runtime-main.js": "/makiyo-website/static/js/runtime-main.77f2ee5b.js",
     "runtime-main.js.map": "/makiyo-website/static/js/runtime-main.77f2ee5b.js.map",
-    "static/js/2.78851b33.chunk.js": "/makiyo-website/static/js/2.78851b33.chunk.js",
-    "static/js/2.78851b33.chunk.js.map": "/makiyo-website/static/js/2.78851b33.chunk.js.map",
+    "static/js/2.178ce417.chunk.js": "/makiyo-website/static/js/2.178ce417.chunk.js",
+    "static/js/2.178ce417.chunk.js.map": "/makiyo-website/static/js/2.178ce417.chunk.js.map",
     "index.html": "/makiyo-website/index.html",
-    "precache-manifest.846b60b6454eca04405e118b4aa10854.js": "/makiyo-website/precache-manifest.846b60b6454eca04405e118b4aa10854.js",
+    "precache-manifest.a18b192a7b26b78f7d7db02da0304fcb.js": "/makiyo-website/precache-manifest.a18b192a7b26b78f7d7db02da0304fcb.js",
     "service-worker.js": "/makiyo-website/service-worker.js",
-    "static/css/main.e9f1d2ad.chunk.css.map": "/makiyo-website/static/css/main.e9f1d2ad.chunk.css.map",
-    "static/js/2.78851b33.chunk.js.LICENSE.txt": "/makiyo-website/static/js/2.78851b33.chunk.js.LICENSE.txt",
+    "static/css/main.ffbcfcb8.chunk.css.map": "/makiyo-website/static/css/main.ffbcfcb8.chunk.css.map",
+    "static/js/2.178ce417.chunk.js.LICENSE.txt": "/makiyo-website/static/js/2.178ce417.chunk.js.LICENSE.txt",
     "static/media/project.png": "/makiyo-website/static/media/project.1eacd843.png"
   },
   "entrypoints": [
     "static/js/runtime-main.77f2ee5b.js",
-    "static/js/2.78851b33.chunk.js",
-    "static/css/main.e9f1d2ad.chunk.css",
-    "static/js/main.c191947c.chunk.js"
+    "static/js/2.178ce417.chunk.js",
+    "static/css/main.ffbcfcb8.chunk.css",
+    "static/js/main.50e22eb0.chunk.js"
   ]
 }
