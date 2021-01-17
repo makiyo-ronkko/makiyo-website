@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './Nav.css';
 
-const Nav = () => {
+const Nav: FC = (): JSX.Element => {
 	// const [toggle, setToggle] = useState(false);
 
 	return (

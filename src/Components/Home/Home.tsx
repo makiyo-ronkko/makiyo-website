@@ -1,7 +1,21 @@
-import React from 'react';
+import React, { FC } from 'react';
 import './Home.css';
 
-const Home = ({ title, subtitle, text, text2, image }) => {
+interface HomeProps {
+	title?: string;
+	subtitle?: string;
+	text?: string;
+	text2?: string;
+	image?: string;
+}
+
+const Home: FC<HomeProps> = ({
+	title,
+	subtitle,
+	text,
+	text2,
+	image,
+}): JSX.Element => {
 	return (
 		<div className='Hero-banner section background-animated' id='top'>
 			<div id='about'>
@@ -20,7 +34,7 @@ const Home = ({ title, subtitle, text, text2, image }) => {
 };
 
 Home.defaultProps = {
-	selfie: 'image',
+	image: 'selfie',
 	title: 'Hello, my name is Makiyo.',
 	subtitle: "I'm a junior web developer.",
 	text:

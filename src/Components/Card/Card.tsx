@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, FC } from 'react';
 import './Card.css';
 
 import Modal from '../Modal/Modal';
 import Modal2 from '../Modal/Modal2';
 import Modal3 from '../Modal/Modal3';
 
-const Card = () => {
+const Card: FC = (): JSX.Element => {
 	const [show1, setShow1] = useState(false);
 	const [show2, setShow2] = useState(false);
 	const [show3, setShow3] = useState(false);

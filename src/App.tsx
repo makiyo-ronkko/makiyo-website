@@ -7,7 +7,7 @@ import Card from './Components/Card/Card';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
 
-const App = () => {
+const App = (): JSX.Element => {
 	return (
 		<div className='wrapper'>
 			<div id='page_top'>
@@ -16,7 +16,7 @@ const App = () => {
 			<Nav />
 			<Home />
 			<Card />
-			<Project username='makiyo-ronkko' />
+			<Project />
 			<Contact />
 			<Footer />
 		</div>

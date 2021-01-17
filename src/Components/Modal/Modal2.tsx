@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { FC, Fragment } from 'react';
 import './Modal.css';
 
-const Modal2 = ({ handleClose2, show2 }) => {
+interface Modal2Props {
+	handleClose2: () => void;
+	show2: boolean;
+}
+
+const Modal2: FC<Modal2Props> = ({ handleClose2, show2 }): JSX.Element => {
 	if (!show2) {
-		return null;
+		return <Fragment></Fragment>;
 	}
 
 	return (

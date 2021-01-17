@@ -1,8 +1,20 @@
-import React from 'react';
+import React, { FC } from 'react';
 import project from '../../img/project.png';
 import './Project.css';
 
-const Project = ({
+interface ProjectProps {
+	githubLink?: string;
+	title?: string;
+	about1?: string;
+	about2?: string;
+	appName?: string;
+	appDesc?: string;
+	appDesc2?: string;
+	appDesc3?: string;
+	appDesc4?: string;
+}
+
+const Project: FC<ProjectProps> = ({
 	githubLink,
 	title,
 	about1,
@@ -12,7 +24,7 @@ const Project = ({
 	appDesc2,
 	appDesc3,
 	appDesc4,
-}) => {
+}): JSX.Element => {
 	return (
 		<div
 			className='Project-section Project box'
