@@ -1,114 +1,75 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import './Card.css';
 
 import Modal from '../Modal/Modal';
 import Modal2 from '../Modal/Modal2';
 import Modal3 from '../Modal/Modal3';
 
-class Card extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      show1: false,
-      show2: false,
-      show3: false,
-    };
+const Card = () => {
+	const [show1, setShow1] = useState(false);
+	const [show2, setShow2] = useState(false);
+	const [show3, setShow3] = useState(false);
 
-    this.showModal1 = this.showModal1.bind(this);
-    this.showModal2 = this.showModal2.bind(this);
-    this.showModal3 = this.showModal3.bind(this);
+	const showModal1 = () => {
+		setShow1(!show1);
+	};
 
-    this.hideModal1 = this.hideModal1.bind(this);
-    this.hideModal2 = this.hideModal2.bind(this);
-    this.hideModal3 = this.hideModal3.bind(this);
-  }
+	const showModal2 = () => {
+		setShow2(!show2);
+	};
 
-  showModal1 = () => {
-    this.setState({
-      show1: true,
-    });
-  };
+	const showModal3 = () => {
+		setShow3(!show3);
+	};
 
-  showModal2 = () => {
-    this.setState({
-      show2: true,
-    });
-  };
+	const hideModal1 = () => {
+		setShow1(!show1);
+	};
 
-  showModal3 = () => {
-    this.setState({
-      show3: true,
-    });
-  };
+	const hideModal2 = () => {
+		setShow2(!show2);
+	};
 
-  hideModal1 = () => {
-    this.setState({
-      show1: false,
-    });
-  };
+	const hideModal3 = () => {
+		setShow3(!show3);
+	};
 
-  hideModal2 = () => {
-    this.setState({
-      show2: false,
-    });
-  };
+	return (
+		<>
+			<div className='Card-1 section'>
+				<div className='box' id='skills'>
+					<div className='Card-container'>
+						<button id='skillsBtn' className='cardBtn' onClick={showModal1}>
+							Skills
+						</button>
+					</div>
+				</div>
+				<Modal show1={show1} handleClose1={hideModal1} />
+			</div>
 
-  hideModal3 = () => {
-    this.setState({
-      show3: false,
-    });
-  };
+			<div className='Card-2 section'>
+				<div className='box' id='workexperience'>
+					<div className='Card-container'>
+						<button id='workBtn' className='cardBtn' onClick={showModal2}>
+							Work Experience
+						</button>
+					</div>
+				</div>
+				<Modal2 show2={show2} handleClose2={hideModal2} />
+			</div>
 
-  render() {
-    return (
-      <>
-        <div className='Card-1 section'>
-          <div className='box' id='skills'>
-            <div className='Card-container'>
-              <button
-                id='skillsBtn'
-                className='cardBtn'
-                onClick={this.showModal1}
-              >
-                Skills
-              </button>
-            </div>
-          </div>
-          <Modal show1={this.state.show1} handleClose1={this.hideModal1} />
-        </div>
-
-        <div className='Card-2 section'>
-          <div className='box' id='workexperience'>
-            <div className='Card-container'>
-              <button
-                id='workBtn'
-                className='cardBtn'
-                onClick={this.showModal2}
-              >
-                Work Experience
-              </button>
-            </div>
-          </div>
-          <Modal2 show2={this.state.show2} handleClose2={this.hideModal2} />
-        </div>
-
-        <div className='Card-3 section'>
-          <div className='box' id='education'>
-            <div className='Card-container'>
-              <button
-                id='educationBtn'
-                className='cardBtn'
-                onClick={this.showModal3}
-              >
-                Education
-              </button>
-            </div>
-          </div>
-          <Modal3 show3={this.state.show3} handleClose3={this.hideModal3} />
-        </div>
-      </>
-    );
-  }
-}
+			<div className='Card-3 section'>
+				<div className='box' id='education'>
+					<div className='Card-container'>
+						<button id='educationBtn' className='cardBtn' onClick={showModal3}>
+							Education
+						</button>
+					</div>
+				</div>
+				<Modal3 show3={show3} handleClose3={hideModal3} />
+			</div>
+		</>
+	);
+};
 
 export default Card;
