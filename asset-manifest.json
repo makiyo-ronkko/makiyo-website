@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/makiyo-website/static/css/main.ffbcfcb8.chunk.css",
-    "main.js": "/makiyo-website/static/js/main.50e22eb0.chunk.js",
-    "main.js.map": "/makiyo-website/static/js/main.50e22eb0.chunk.js.map",
+    "main.js": "/makiyo-website/static/js/main.3859eacd.chunk.js",
+    "main.js.map": "/makiyo-website/static/js/main.3859eacd.chunk.js.map",
     "runtime-main.js": "/makiyo-website/static/js/runtime-main.77f2ee5b.js",
     "runtime-main.js.map": "/makiyo-website/static/js/runtime-main.77f2ee5b.js.map",
     "static/js/2.178ce417.chunk.js": "/makiyo-website/static/js/2.178ce417.chunk.js",
     "static/js/2.178ce417.chunk.js.map": "/makiyo-website/static/js/2.178ce417.chunk.js.map",
     "index.html": "/makiyo-website/index.html",
-    "precache-manifest.a18b192a7b26b78f7d7db02da0304fcb.js": "/makiyo-website/precache-manifest.a18b192a7b26b78f7d7db02da0304fcb.js",
+    "precache-manifest.d194f822ab161eb5e61b330463c93691.js": "/makiyo-website/precache-manifest.d194f822ab161eb5e61b330463c93691.js",
     "service-worker.js": "/makiyo-website/service-worker.js",
     "static/css/main.ffbcfcb8.chunk.css.map": "/makiyo-website/static/css/main.ffbcfcb8.chunk.css.map",
     "static/js/2.178ce417.chunk.js.LICENSE.txt": "/makiyo-website/static/js/2.178ce417.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.77f2ee5b.js",
     "static/js/2.178ce417.chunk.js",
     "static/css/main.ffbcfcb8.chunk.css",
-    "static/js/main.50e22eb0.chunk.js"
+    "static/js/main.3859eacd.chunk.js"
   ]
 }
