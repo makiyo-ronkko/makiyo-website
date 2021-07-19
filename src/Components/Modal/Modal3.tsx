@@ -17,10 +17,10 @@ const Modal3: FC<Modal3Props> = ({ handleClose3, show3 }): JSX.Element => {
 				<span className='close' onClick={handleClose3}>
 					&times;
 				</span>
-				<h2>01/2020- present: Business College Helsinki Oy</h2>
+				<h2>01/2020- 06/2021: Business College Helsinki Oy</h2>
 				<p>
-					Full Stack Web Developer program, Information and Communications
-					Technology
+					Full Stack Web Developer program, Vocational Qualification in
+					Information and Communications Technology
 				</p>
 				<h2>
 					08/2010- 12/2014: Helsinki Metropolia University of Applied Sciences
