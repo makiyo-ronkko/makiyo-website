@@ -6,9 +6,9 @@ import Modal2 from '../Modal/Modal2';
 import Modal3 from '../Modal/Modal3';
 
 const Card: FC = (): JSX.Element => {
-	const [show1, setShow1] = useState(false);
-	const [show2, setShow2] = useState(false);
-	const [show3, setShow3] = useState(false);
+	const [show1, setShow1] = useState<boolean>(false);
+	const [show2, setShow2] = useState<boolean>(false);
+	const [show3, setShow3] = useState<boolean>(false);
 
 	const showModal1 = () => {
 		setShow1(!show1);
