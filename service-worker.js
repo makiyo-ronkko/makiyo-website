@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/makiyo-website/precache-manifest.d194f822ab161eb5e61b330463c93691.js"
+  "/makiyo-website/precache-manifest.77e5a2a1b1d00e714a04a73f300fbde5.js"
 );
 
 self.addEventListener('message', (event) => {
